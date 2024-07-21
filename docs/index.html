@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="jn">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GithubPagesのテスト</title>
+    <title>万華鏡文字</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>GithubPagesのテスト</h1>
+    <header>
+        <h1 class="title">万華鏡文字</h1>
+    </header>
+    <main>
+        <div class="input-position">
+            <label for="name" class='input-label'>文字を入力してください</label>
+            <input type="text" id="name" class='input-text' required minlength="1" 
+            maxlength="5" size="50" placeholder="(五文字まで)" />
+            <button class="submit" id="submit">決定</button>
+        </div>
+    </main>
+    <div id="canvas-container">
+        <canvas id="canvas-area"></canvas>
+    </div>
+    <div id="canvas-container2">
+        <canvas id="triangleCanvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

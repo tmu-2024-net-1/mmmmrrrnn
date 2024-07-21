@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'myfont'; 
+    src: url('fonts/Corporate-Mincho-ver3.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    font-family: 'myfont'; 
+}
+
+header {
+    background-color: rgb(34, 34, 69);
+    color: rgb(219, 228, 240);
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+}
+
+.title {
+    font-family: 'myfont'; 
+    font-size: 2.2vw;
+    font-weight: 100; 
+    letter-spacing: 1vw;
+    margin: 0;
+}
+
+.input-label {
+    
+    display: block;
+    margin-bottom: 1vw;
+    font-size: 16px;
+}
+
+.input-text {
+    max-width: 10vw;
+    padding: 1vw;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 1vw;
+}
+
+.input-text:focus {
+    border-color: #4a87e2;
+    outline: none;
+}
+
+.submit {
+    font-family: 'myfont';
+    background-color: rgb(34, 34, 69);
+    color: rgb(219, 228, 240);
+    padding: 0.8vw 2vw;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit:active {
+    background-color: rgb(219, 228, 240);
+    color: rgb(7, 7, 83);
+}
+
+.input-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    bottom: 3vw;
+    right: 55px;
+    z-index: 101;
+}
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(219, 228, 240);
+    z-index: 10;
+}
+#canvas-container2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+    z-index: 50;
+}
+
+#canvas-area {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+#triangleCanvas {
+    display: block;
+    width: 75vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+}
+
