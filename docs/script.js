@@ -123,7 +123,6 @@ const createPointsOnCircle = (centerX, centerY, radius, numPoints, delta) => {
       const ctx2 = canvas2.getContext('2d');
       ctx2.putImageData(imageData, 50, 50);
   }
-
   // ページが読み込まれた後に実行
   window.onload = drawCanvas;
 
