@@ -212,7 +212,7 @@ document.getElementById('screenshot-btn').addEventListener('click', () => {
 
   triangleCanvas4.style.position = "absolute";
   triangleCanvas4.style.left = "125px";
-  triangleCanvas4.style.top = "-50px";
+  triangleCanvas4.style.top = "-45px";
 
   const triangleCanvas5 = document.getElementById('triangleCanvas5');
   const triangleCtx5 = triangleCanvas5.getContext('2d');
