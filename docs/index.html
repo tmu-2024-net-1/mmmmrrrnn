@@ -13,17 +13,45 @@
     <main>
         <div class="input-position">
             <label for="name" class='input-label'>文字を入力してください</label>
-            <input type="text" id="name" class='input-text' required minlength="1" 
-            maxlength="5" size="50" placeholder="(五文字まで)" />
-            <button class="submit" id="submit">決定</button>
+            <input type="text" id="name" class='input-text' required minlength="1" maxlength="5" size="50" placeholder="(五文字まで)" />
+            <div class="button-container">
+                <button class="submit" id="submit">入力</button>
+                <button class="reload" id="reload" onclick="reloadPage()">リセット</button>
+            </div>
+            <button class="screenshot-btn" id="screenshot-btn" style="display: none;">万華鏡を覗く</button>
         </div>
+        
     </main>
     <div id="canvas-container">
         <canvas id="canvas-area"></canvas>
     </div>
     <div id="canvas-container2">
         <canvas id="triangleCanvas"></canvas>
+        <canvas id="triangleCanvas2"></canvas>
+        <canvas id="triangleCanvas3"></canvas>
+        <canvas id="triangleCanvas4"></canvas>
+        <canvas id="triangleCanvas5"></canvas>
+        <canvas id="triangleCanvas6"></canvas>
+        <canvas id="triangleCanvas7"></canvas>
+        <canvas id="triangleCanvas8"></canvas>
+        <canvas id="triangleCanvas9"></canvas>
+        <canvas id="triangleCanvas10"></canvas>
+        <canvas id="triangleCanvas11"></canvas>
+        <canvas id="triangleCanvas12"></canvas>
+        <canvas id="triangleCanvas13"></canvas>
+        <canvas id="triangleCanvas14"></canvas>
+        <canvas id="triangleCanvas15"></canvas>
+        <canvas id="triangleCanvas16"></canvas>
+        <canvas id="triangleCanvas17"></canvas>
+        <canvas id="triangleCanvas18"></canvas>
+        <canvas id="triangleCanvas19"></canvas>
+        <canvas id="triangleCanvas20"></canvas>
+    </div>
+    <div id="output-container">
+        <canvas id="outputCanvas"></canvas>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

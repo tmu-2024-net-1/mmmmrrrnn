@@ -27,7 +27,6 @@ header {
 }
 
 .input-label {
-    
     display: block;
     margin-bottom: 1vw;
     font-size: 16px;
@@ -48,6 +47,13 @@ header {
     outline: none;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between; /* ボタンを水平に並べる */
+    width: 100%;
+    gap: 1vw; /* ボタン間のスペースを調整 */
+}
+
 .submit {
     font-family: 'myfont';
     background-color: rgb(34, 34, 69);
@@ -56,10 +62,39 @@ header {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 1vw;
+    text-align: center;
 }
-.submit:active {
+.reload{
+    font-family: 'myfont';
+    background-color: rgb(231, 231, 239);
+    color: rgb(14, 23, 36);
+    padding: 0.8vw 2vw;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.submit:active, .reload:active {
     background-color: rgb(219, 228, 240);
     color: rgb(7, 7, 83);
+}
+
+.screenshot-btn {
+    font-family: 'myfont';
+    font-size: 18px;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    background-color: rgb(148, 158, 185);
+    color: rgb(13, 31, 56);
+    padding: 0.8vw 2vw;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 102; 
 }
 
 .input-position {
@@ -72,6 +107,7 @@ header {
     right: 55px;
     z-index: 101;
 }
+
 #canvas-container {
     position: fixed;
     top: 0;
@@ -81,27 +117,44 @@ header {
     background-color: rgb(219, 228, 240);
     z-index: 10;
 }
+
 #canvas-container2 {
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: none;
-    z-index: 50;
+    z-index: 10;
 }
 
-#canvas-area {
+#canvas-area, #outputCanvas {
     display: block;
     width: 100%;
     height: 100%;
     z-index: 99;
 }
-#triangleCanvas {
+
+#triangleCanvas, #triangleCanvas2, #triangleCanvas3,
+#triangleCanvas9, #triangleCanvas10, #triangleCanvas7,
+#triangleCanvas11, #triangleCanvas12, #triangleCanvas13,
+#triangleCanvas19, #triangleCanvas20 {
     display: block;
-    width: 75vw;
-    height: 100%;
-    z-index: 100;
-    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: 30%;
+    z-index: 99;
+    width: 300px;
+    height: 210px;
 }
 
+#triangleCanvas4, #triangleCanvas5, #triangleCanvas15,
+#triangleCanvas6, #triangleCanvas7, #triangleCanvas8, #triangleCanvas14,
+#triangleCanvas16, #triangleCanvas17, #triangleCanvas18 {
+    display: block;
+    width: 30%;
+    height: 30%;
+    z-index: 99;
+    transform: scaleY(-1);
+    width: 300px;
+    height: 210px;
+}
