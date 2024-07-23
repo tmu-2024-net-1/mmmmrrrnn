@@ -56,9 +56,9 @@ window.addEventListener('wheel', (event) => {
 });
 
 const createPointsOnCircle = (centerX, centerY, radius, numPoints, delta) => {
-    // 既存の点を削除
+
     points.forEach(point => Composite.remove(world, point));
-    points.length = 0; // 配列をリセット
+    points.length = 0; 
   
     for (let i = 0; i < numPoints; i++) {
       const angle = (i / numPoints) * 2 * Math.PI + delta * 0.001; // スクロール量を利用して角度を調整
@@ -384,6 +384,7 @@ document.getElementById('submit').addEventListener('click', () => {
       textInCircle(inputText);
       // スクリーンショットボタンを表示
       document.getElementById('screenshot-btn').style.display = 'block';
+      document.getElementById('button-text').style.display = 'block';
   }
 });
 

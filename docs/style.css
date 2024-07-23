@@ -96,6 +96,30 @@ header {
     cursor: pointer;
     z-index: 102; 
 }
+.button-container2{
+    font-family: 'myfont';
+    font-size: 18px;
+    position: fixed;
+    top: 130px;
+    right: 10px;
+    color: rgb(13, 31, 56);
+    padding: 0.8vw 2vw;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 102; 
+}
+
+
+.botton-text {
+    font-family: 'myfont';
+    font-size: 18px;
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    color: rgb(13, 31, 56);
+    border-radius: 4px;
+    z-index: 102; 
+}
 
 .input-position {
     display: flex;
