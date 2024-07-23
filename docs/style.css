@@ -98,7 +98,6 @@ header {
 }
 .button-container2{
     font-family: 'myfont';
-    font-size: 18px;
     position: fixed;
     top: 130px;
     right: 10px;
@@ -112,10 +111,10 @@ header {
 
 .botton-text {
     font-family: 'myfont';
-    font-size: 18px;
+    font-size: 12px;
     position: fixed;
     top: 120px;
-    right: 10px;
+    right: 0px;
     color: rgb(13, 31, 56);
     border-radius: 4px;
     z-index: 102; 
